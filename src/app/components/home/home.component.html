@@ -1,0 +1,14 @@
+<h1>Welcome to Jira</h1>
+
+<!-- Display a list of tasks or issues -->
+<div *ngIf="tasks.length > 0">
+  <h2>Tasks:</h2>
+  <ul>
+    <li *ngFor="let task of tasks">{{ task }}</li>
+  </ul>
+</div>
+
+<!-- Display a message if no tasks are available -->
+<div *ngIf="tasks.length === 0">
+  <p>No tasks available.</p>
+</div>
